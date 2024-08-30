@@ -1,0 +1,60 @@
+name: Deploy Kotlin/Wasm to GitHub Pages
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  # Build job
+  build:
+    name: Build Kotlin/WASM Artifacts
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Java Development Kit (JDK)
+        uses: actions/setup-java@v2
+        with:
+          distribution: 'adopt'
+          java-version: '17'
+
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Grant Execute Permissions to Gradle Wrapper
+        run: chmod +x gradlew
+
+      - name: Update Yarn Lock File
+        run: ./gradlew kotlinUpgradeYarnLock
+
+      - name: Execute Gradle Build Tasks
+        run: ./gradlew wasmJsBrowserDistribution
+
+      - name: Fix File Permissions for Artifacts
+        run: |
+          chmod -v -R +rX "demo/composeApp/build/dist/wasmJs/productionExecutable/" | while read line; do
+            echo "::warning title=Invalid file permissions automatically fixed::$line"
+          done
+
+      - name: Upload Artifacts to Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: demo/composeApp/build/dist/wasmJs/productionExecutable/
+
+  deploy:
+    name: Deploy Artifacts to GitHub Pages
+    needs: build
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

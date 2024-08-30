@@ -1,0 +1,67 @@
+# Ignore IntelliJ IDEA module files
+*.iml
+
+# Ignore Kotlin and Gradle related files
+.kotlin/
+.gradle/
+
+# Ignore build directories
+**/build/
+!src/**/build/
+
+# Ignore Android Studio specific files
+local.properties
+
+# Ignore macOS specific files
+.DS_Store
+
+# Ignore captured screenshots and logs
+captures/
+
+# Ignore Android build directories
+.externalNativeBuild/
+.cxx/
+
+# Ignore Xcode project files (except essential ones)
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcodeproj/project.xcworkspace/
+!*.xcworkspace/contents.xcworkspacedata
+**/xcshareddata/WorkspaceSettings.xcsettings
+
+# Ignore local configuration files
+*.log
+*.tmp
+
+# Ignore Maven build directories
+target/
+
+# Ignore JetBrains IDE specific files
+# .idea/
+
+# Ignore Visual Studio Code specific files
+.vscode/
+
+# Ignore node_modules if using JavaScript/TypeScript
+node_modules/
+
+# Ignore coverage reports
+coverage/
+
+# Ignore IDE-specific files
+*.suo
+*.user
+*.userosscache
+*.ncb
+*.sdf
+*.sln
+*.pdb
+*.obj
+*.dll
+*.lib
+*.exe
+*.class
+*.swp
+*.swo
+*.stackdump

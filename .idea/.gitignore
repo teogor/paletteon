@@ -1,0 +1,28 @@
+# Ignore workspace-specific and local files
+*.iml
+*.iws
+*.ipr
+*.xml
+
+# Ignore project-specific configuration files
+workspace.xml
+tasks.xml
+dictionaries
+shelf
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+
+# Ignore user-specific configuration files
+*-user.xml
+*.user
+*.user.xml
+
+# Ignore compiler output
+compile-server/
+.gradle/
+.idea
+
+# Ignore project-specific run configurations
+runConfigurations/

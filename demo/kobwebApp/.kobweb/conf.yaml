@@ -1,0 +1,13 @@
+site:
+  title: "Paletteon"
+
+server:
+  files:
+    dev:
+      contentRoot: "build/processedResources/js/main/public"
+      script: "build/kotlin-webpack/js/developmentExecutable/paletteon-site.js"
+    prod:
+      script: "build/kotlin-webpack/js/productionExecutable/paletteon-site.js"
+      siteRoot: ".kobweb/site"
+
+  port: 8080

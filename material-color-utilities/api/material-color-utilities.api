@@ -1,0 +1,338 @@
+public final class dev/teogor/paletteon/blend/Blend {
+	public static final field INSTANCE Ldev/teogor/paletteon/blend/Blend;
+	public final fun cam16Ucs (IID)I
+	public final fun harmonize (II)I
+	public final fun harmonize (Ldev/teogor/paletteon/hct/Hct;Ldev/teogor/paletteon/hct/Hct;)Ldev/teogor/paletteon/hct/Hct;
+	public final fun hctHue (IID)I
+}
+
+public final class dev/teogor/paletteon/contrast/Contrast {
+	public static final field INSTANCE Ldev/teogor/paletteon/contrast/Contrast;
+	public final fun darker (DD)D
+	public final fun darker (DF)F
+	public final fun darkerUnsafe (DD)D
+	public final fun darkerUnsafe (DF)F
+	public final fun lighter (DD)D
+	public final fun lighter (DF)F
+	public final fun lighterUnsafe (DD)D
+	public final fun lighterUnsafe (DF)F
+	public final fun ratioOfTones (DD)D
+	public final fun ratioOfYs (DD)D
+}
+
+public final class dev/teogor/paletteon/dislike/DislikeAnalyzer {
+	public static final field INSTANCE Ldev/teogor/paletteon/dislike/DislikeAnalyzer;
+	public final fun fixIfDisliked (Ldev/teogor/paletteon/hct/Hct;)Ldev/teogor/paletteon/hct/Hct;
+	public final fun isDisliked (Ldev/teogor/paletteon/hct/Hct;)Z
+}
+
+public final class dev/teogor/paletteon/dynamiccolor/ContrastCurve {
+	public fun <init> (DDDD)V
+	public final fun get (D)D
+}
+
+public final class dev/teogor/paletteon/dynamiccolor/DynamicColor {
+	public static final field Companion Ldev/teogor/paletteon/dynamiccolor/DynamicColor$Companion;
+	public fun <init> (Ljava/lang/String;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;ZLkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Ldev/teogor/paletteon/dynamiccolor/ContrastCurve;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)V
+	public synthetic fun <init> (Ljava/lang/String;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;ZLkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Ldev/teogor/paletteon/dynamiccolor/ContrastCurve;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun getArgb (Ldev/teogor/paletteon/scheme/DynamicScheme;)I
+	public final fun getBackground ()Lkotlin/jvm/functions/Function1;
+	public final fun getContrastCurve ()Ldev/teogor/paletteon/dynamiccolor/ContrastCurve;
+	public final fun getHct (Ldev/teogor/paletteon/scheme/DynamicScheme;)Ldev/teogor/paletteon/hct/Hct;
+	public final fun getName ()Ljava/lang/String;
+	public final fun getOpacity ()Lkotlin/jvm/functions/Function1;
+	public final fun getPalette ()Lkotlin/jvm/functions/Function1;
+	public final fun getSecondBackground ()Lkotlin/jvm/functions/Function1;
+	public final fun getTone ()Lkotlin/jvm/functions/Function1;
+	public final fun getTone (Ldev/teogor/paletteon/scheme/DynamicScheme;)D
+	public final fun getToneDeltaPair ()Lkotlin/jvm/functions/Function1;
+	public final fun isBackground ()Z
+}
+
+public final class dev/teogor/paletteon/dynamiccolor/DynamicColor$Companion {
+	public final fun enableLightForeground (D)D
+	public final fun foregroundTone (DD)D
+	public final fun fromArgb (Ljava/lang/String;I)Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun fromPalette (Ljava/lang/String;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun fromPalette (Ljava/lang/String;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Z)Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun toneAllowsLightForeground (D)Z
+	public final fun tonePrefersLightForeground (D)Z
+}
+
+public final class dev/teogor/paletteon/dynamiccolor/MaterialDynamicColors {
+	public static final field Companion Ldev/teogor/paletteon/dynamiccolor/MaterialDynamicColors$Companion;
+	public fun <init> ()V
+	public fun <init> (Z)V
+	public synthetic fun <init> (ZILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun background ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun controlActivated ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun controlHighlight ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun controlNormal ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun error ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun errorContainer ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun highestSurface (Ldev/teogor/paletteon/scheme/DynamicScheme;)Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun inverseOnSurface ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun inversePrimary ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun inverseSurface ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun neutralPaletteKeyColor ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun neutralVariantPaletteKeyColor ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun onBackground ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun onError ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun onErrorContainer ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun onPrimary ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun onPrimaryContainer ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun onPrimaryFixed ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun onPrimaryFixedVariant ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun onSecondary ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun onSecondaryContainer ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun onSecondaryFixed ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun onSecondaryFixedVariant ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun onSuccess ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun onSuccessContainer ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun onSurface ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun onSurfaceVariant ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun onTertiary ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun onTertiaryContainer ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun onTertiaryFixed ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun onTertiaryFixedVariant ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun onWarning ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun onWarningContainer ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun outline ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun outlineVariant ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun primary ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun primaryContainer ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun primaryFixed ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun primaryFixedDim ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun primaryPaletteKeyColor ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun scrim ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun secondary ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun secondaryContainer ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun secondaryFixed ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun secondaryFixedDim ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun secondaryPaletteKeyColor ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun shadow ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun success ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun successContainer ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun surface ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun surfaceBright ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun surfaceContainer ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun surfaceContainerHigh ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun surfaceContainerHighest ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun surfaceContainerLow ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun surfaceContainerLowest ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun surfaceDim ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun surfaceTint ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun surfaceVariant ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun tertiary ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun tertiaryContainer ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun tertiaryFixed ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun tertiaryFixedDim ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun tertiaryPaletteKeyColor ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun textHintInverse ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun textPrimaryInverse ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun textPrimaryInverseDisableOnly ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun textSecondaryAndTertiaryInverse ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun textSecondaryAndTertiaryInverseDisabled ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun warning ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun warningContainer ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+}
+
+public final class dev/teogor/paletteon/dynamiccolor/MaterialDynamicColors$Companion {
+}
+
+public final class dev/teogor/paletteon/dynamiccolor/ToneDeltaPair {
+	public fun <init> (Ldev/teogor/paletteon/dynamiccolor/DynamicColor;Ldev/teogor/paletteon/dynamiccolor/DynamicColor;DLdev/teogor/paletteon/dynamiccolor/TonePolarity;Z)V
+	public final fun getDelta ()D
+	public final fun getPolarity ()Ldev/teogor/paletteon/dynamiccolor/TonePolarity;
+	public final fun getRoleA ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun getRoleB ()Ldev/teogor/paletteon/dynamiccolor/DynamicColor;
+	public final fun getStayTogether ()Z
+}
+
+public final class dev/teogor/paletteon/dynamiccolor/TonePolarity : java/lang/Enum {
+	public static final field DARKER Ldev/teogor/paletteon/dynamiccolor/TonePolarity;
+	public static final field FARTHER Ldev/teogor/paletteon/dynamiccolor/TonePolarity;
+	public static final field LIGHTER Ldev/teogor/paletteon/dynamiccolor/TonePolarity;
+	public static final field NEARER Ldev/teogor/paletteon/dynamiccolor/TonePolarity;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Ldev/teogor/paletteon/dynamiccolor/TonePolarity;
+	public static fun values ()[Ldev/teogor/paletteon/dynamiccolor/TonePolarity;
+}
+
+public final class dev/teogor/paletteon/hct/Hct {
+	public static final field Companion Ldev/teogor/paletteon/hct/Hct$Companion;
+	public synthetic fun <init> (ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun getChroma ()D
+	public final fun getHue ()D
+	public final fun getTone ()D
+	public final fun toInt ()I
+	public final fun withChroma (D)Ldev/teogor/paletteon/hct/Hct;
+	public final fun withHue (D)Ldev/teogor/paletteon/hct/Hct;
+	public final fun withTone (D)Ldev/teogor/paletteon/hct/Hct;
+}
+
+public final class dev/teogor/paletteon/hct/Hct$Companion {
+	public final fun from (DDD)Ldev/teogor/paletteon/hct/Hct;
+	public final fun fromInt (I)Ldev/teogor/paletteon/hct/Hct;
+}
+
+public final class dev/teogor/paletteon/hct/HctSolver {
+	public static final field INSTANCE Ldev/teogor/paletteon/hct/HctSolver;
+	public final fun solveToInt (DDD)I
+}
+
+public final class dev/teogor/paletteon/palettes/CorePalette {
+	public static final field Companion Ldev/teogor/paletteon/palettes/CorePalette$Companion;
+	public synthetic fun <init> (IZLkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun getA1 ()Ldev/teogor/paletteon/palettes/TonalPalette;
+	public final fun getA2 ()Ldev/teogor/paletteon/palettes/TonalPalette;
+	public final fun getA3 ()Ldev/teogor/paletteon/palettes/TonalPalette;
+	public final fun getError ()Ldev/teogor/paletteon/palettes/TonalPalette;
+	public final fun getN1 ()Ldev/teogor/paletteon/palettes/TonalPalette;
+	public final fun getN2 ()Ldev/teogor/paletteon/palettes/TonalPalette;
+}
+
+public final class dev/teogor/paletteon/palettes/CorePalette$Companion {
+	public final fun contentOf (I)Ldev/teogor/paletteon/palettes/CorePalette;
+	public final fun of (I)Ldev/teogor/paletteon/palettes/CorePalette;
+}
+
+public final class dev/teogor/paletteon/palettes/TonalPalette {
+	public static final field Companion Ldev/teogor/paletteon/palettes/TonalPalette$Companion;
+	public synthetic fun <init> (DDLdev/teogor/paletteon/hct/Hct;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun getChroma ()D
+	public final fun getHct (D)Ldev/teogor/paletteon/hct/Hct;
+	public final fun getHue ()D
+	public final fun getKeyColor ()Ldev/teogor/paletteon/hct/Hct;
+	public final fun tone (I)I
+}
+
+public final class dev/teogor/paletteon/palettes/TonalPalette$Companion {
+	public final fun fromHct (Ldev/teogor/paletteon/hct/Hct;)Ldev/teogor/paletteon/palettes/TonalPalette;
+	public final fun fromHueAndChroma (DD)Ldev/teogor/paletteon/palettes/TonalPalette;
+	public final fun fromInt (I)Ldev/teogor/paletteon/palettes/TonalPalette;
+}
+
+public final class dev/teogor/paletteon/quantize/QuantizerCelebi {
+	public static final field INSTANCE Ldev/teogor/paletteon/quantize/QuantizerCelebi;
+	public final fun quantize ([II)Ljava/util/Map;
+}
+
+public class dev/teogor/paletteon/scheme/DynamicScheme {
+	public static final field Companion Ldev/teogor/paletteon/scheme/DynamicScheme$Companion;
+	public fun <init> (Ldev/teogor/paletteon/hct/Hct;Ldev/teogor/paletteon/scheme/Variant;ZDLdev/teogor/paletteon/palettes/TonalPalette;Ldev/teogor/paletteon/palettes/TonalPalette;Ldev/teogor/paletteon/palettes/TonalPalette;Ldev/teogor/paletteon/palettes/TonalPalette;Ldev/teogor/paletteon/palettes/TonalPalette;)V
+	public final fun getContrastLevel ()D
+	public final fun getErrorPalette ()Ldev/teogor/paletteon/palettes/TonalPalette;
+	public final fun getNeutralPalette ()Ldev/teogor/paletteon/palettes/TonalPalette;
+	public final fun getNeutralVariantPalette ()Ldev/teogor/paletteon/palettes/TonalPalette;
+	public final fun getPrimaryPalette ()Ldev/teogor/paletteon/palettes/TonalPalette;
+	public final fun getSecondaryPalette ()Ldev/teogor/paletteon/palettes/TonalPalette;
+	public final fun getSourceColorArgb ()I
+	public final fun getSourceColorHct ()Ldev/teogor/paletteon/hct/Hct;
+	public final fun getSuccessPalette ()Ldev/teogor/paletteon/palettes/TonalPalette;
+	public final fun getTertiaryPalette ()Ldev/teogor/paletteon/palettes/TonalPalette;
+	public final fun getVariant ()Ldev/teogor/paletteon/scheme/Variant;
+	public final fun getWarningPalette ()Ldev/teogor/paletteon/palettes/TonalPalette;
+	public final fun isDark ()Z
+	public final fun setErrorPalette (Ldev/teogor/paletteon/palettes/TonalPalette;)V
+	public final fun setSuccessPalette (Ldev/teogor/paletteon/palettes/TonalPalette;)V
+	public final fun setWarningPalette (Ldev/teogor/paletteon/palettes/TonalPalette;)V
+}
+
+public final class dev/teogor/paletteon/scheme/DynamicScheme$Companion {
+	public final fun getRotatedHue (Ldev/teogor/paletteon/hct/Hct;[D[D)D
+}
+
+public final class dev/teogor/paletteon/scheme/SchemeContent : dev/teogor/paletteon/scheme/DynamicScheme {
+	public fun <init> (Ldev/teogor/paletteon/hct/Hct;ZD)V
+}
+
+public final class dev/teogor/paletteon/scheme/SchemeExpressive : dev/teogor/paletteon/scheme/DynamicScheme {
+	public fun <init> (Ldev/teogor/paletteon/hct/Hct;ZD)V
+}
+
+public final class dev/teogor/paletteon/scheme/SchemeFidelity : dev/teogor/paletteon/scheme/DynamicScheme {
+	public fun <init> (Ldev/teogor/paletteon/hct/Hct;ZD)V
+}
+
+public final class dev/teogor/paletteon/scheme/SchemeFruitSalad : dev/teogor/paletteon/scheme/DynamicScheme {
+	public fun <init> (Ldev/teogor/paletteon/hct/Hct;ZD)V
+}
+
+public final class dev/teogor/paletteon/scheme/SchemeMonochrome : dev/teogor/paletteon/scheme/DynamicScheme {
+	public fun <init> (Ldev/teogor/paletteon/hct/Hct;ZD)V
+}
+
+public final class dev/teogor/paletteon/scheme/SchemeNeutral : dev/teogor/paletteon/scheme/DynamicScheme {
+	public fun <init> (Ldev/teogor/paletteon/hct/Hct;ZD)V
+}
+
+public final class dev/teogor/paletteon/scheme/SchemeRainbow : dev/teogor/paletteon/scheme/DynamicScheme {
+	public fun <init> (Ldev/teogor/paletteon/hct/Hct;ZD)V
+}
+
+public final class dev/teogor/paletteon/scheme/SchemeTonalSpot : dev/teogor/paletteon/scheme/DynamicScheme {
+	public fun <init> (Ldev/teogor/paletteon/hct/Hct;ZD)V
+}
+
+public final class dev/teogor/paletteon/scheme/SchemeVibrant : dev/teogor/paletteon/scheme/DynamicScheme {
+	public fun <init> (Ldev/teogor/paletteon/hct/Hct;ZD)V
+}
+
+public final class dev/teogor/paletteon/scheme/Variant : java/lang/Enum {
+	public static final field CONTENT Ldev/teogor/paletteon/scheme/Variant;
+	public static final field EXPRESSIVE Ldev/teogor/paletteon/scheme/Variant;
+	public static final field FIDELITY Ldev/teogor/paletteon/scheme/Variant;
+	public static final field FRUIT_SALAD Ldev/teogor/paletteon/scheme/Variant;
+	public static final field MONOCHROME Ldev/teogor/paletteon/scheme/Variant;
+	public static final field NEUTRAL Ldev/teogor/paletteon/scheme/Variant;
+	public static final field RAINBOW Ldev/teogor/paletteon/scheme/Variant;
+	public static final field TONAL_SPOT Ldev/teogor/paletteon/scheme/Variant;
+	public static final field VIBRANT Ldev/teogor/paletteon/scheme/Variant;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Ldev/teogor/paletteon/scheme/Variant;
+	public static fun values ()[Ldev/teogor/paletteon/scheme/Variant;
+}
+
+public final class dev/teogor/paletteon/score/Score {
+	public static final field INSTANCE Ldev/teogor/paletteon/score/Score;
+	public final fun score (Ljava/util/Map;ILjava/lang/Integer;Z)Ljava/util/List;
+	public static synthetic fun score$default (Ldev/teogor/paletteon/score/Score;Ljava/util/Map;ILjava/lang/Integer;ZILjava/lang/Object;)Ljava/util/List;
+}
+
+public final class dev/teogor/paletteon/temperature/TemperatureCache {
+	public static final field Companion Ldev/teogor/paletteon/temperature/TemperatureCache$Companion;
+	public fun <init> (Ldev/teogor/paletteon/hct/Hct;)V
+	public final fun getAnalogousColors ()Ljava/util/List;
+	public final fun getAnalogousColors (II)Ljava/util/List;
+	public final fun getComplement ()Ldev/teogor/paletteon/hct/Hct;
+	public final fun getRelativeTemperature (Ldev/teogor/paletteon/hct/Hct;)D
+}
+
+public final class dev/teogor/paletteon/temperature/TemperatureCache$Companion {
+	public final fun rawTemperature (Ldev/teogor/paletteon/hct/Hct;)D
+}
+
+public final class dev/teogor/paletteon/utils/ColorUtils {
+	public static final field INSTANCE Ldev/teogor/paletteon/utils/ColorUtils;
+	public final fun argbFromLab (DDD)I
+	public final fun argbFromLinrgb ([D)I
+	public final fun argbFromLstar (D)I
+	public final fun argbFromRgb (III)I
+	public final fun argbFromXyz (DDD)I
+	public final fun blueFromArgb (I)I
+	public final fun calculateLuminance (I)D
+	public final fun delinearized (D)I
+	public final fun greenFromArgb (I)I
+	public final fun labF (D)D
+	public final fun labFromArgb (I)[D
+	public final fun labInvf (D)D
+	public final fun linearized (I)D
+	public final fun lstarFromArgb (I)D
+	public final fun lstarFromY (D)D
+	public final fun redFromArgb (I)I
+	public final fun whitePointD65 ()[D
+	public final fun xyzFromArgb (I)[D
+	public final fun yFromLstar (D)D
+}
+
