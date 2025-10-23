@@ -116,7 +116,7 @@ kotlin {
 
 android {
     namespace = "dev.teogor.paletteon.demo"
-    compileSdk = libs.versions.android.compileSdk.get().toInt()
+    compileSdk = libs.versions.android.sdk.compile.get().toInt()
 
     sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
     sourceSets["main"].res.srcDirs("src/androidMain/res")
@@ -124,8 +124,8 @@ android {
 
     defaultConfig {
         applicationId = "dev.teogor.paletteon"
-        minSdk = libs.versions.android.minSdk.get().toInt()
-        targetSdk = libs.versions.android.targetSdk.get().toInt()
+        minSdk = libs.versions.android.sdk.minDemo.get().toInt()
+        targetSdk = libs.versions.android.sdk.target.get().toInt()
         versionCode = 1
         versionName = "1.0.0"
     }
