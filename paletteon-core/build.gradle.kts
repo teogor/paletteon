@@ -102,7 +102,6 @@ kotlin {
 
                 api(projects.materialColorUtilities)
 
-                implementation(libs.teogor.crosslens.core)
                 implementation(libs.ajalt.colormath)
             }
         }
