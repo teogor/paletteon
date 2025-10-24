@@ -305,19 +305,13 @@ public final class dev/teogor/paletteon/ui/simulation/ColorPalette : java/util/C
 
 public final class dev/teogor/paletteon/ui/simulation/ComposableSingletons$DeviceSimulationKt {
 	public static final field INSTANCE Ldev/teogor/paletteon/ui/simulation/ComposableSingletons$DeviceSimulationKt;
-	public static field lambda-1 Lkotlin/jvm/functions/Function2;
-	public static field lambda-2 Lkotlin/jvm/functions/Function2;
-	public static field lambda-3 Lkotlin/jvm/functions/Function2;
-	public static field lambda-4 Lkotlin/jvm/functions/Function2;
-	public static field lambda-5 Lkotlin/jvm/functions/Function2;
-	public static field lambda-6 Lkotlin/jvm/functions/Function2;
 	public fun <init> ()V
-	public final fun getLambda-1$paletteon_core ()Lkotlin/jvm/functions/Function2;
-	public final fun getLambda-2$paletteon_core ()Lkotlin/jvm/functions/Function2;
-	public final fun getLambda-3$paletteon_core ()Lkotlin/jvm/functions/Function2;
-	public final fun getLambda-4$paletteon_core ()Lkotlin/jvm/functions/Function2;
-	public final fun getLambda-5$paletteon_core ()Lkotlin/jvm/functions/Function2;
-	public final fun getLambda-6$paletteon_core ()Lkotlin/jvm/functions/Function2;
+	public final fun getLambda$-1066714039$paletteon_core ()Lkotlin/jvm/functions/Function2;
+	public final fun getLambda$-1905646639$paletteon_core ()Lkotlin/jvm/functions/Function2;
+	public final fun getLambda$1097639187$paletteon_core ()Lkotlin/jvm/functions/Function2;
+	public final fun getLambda$1107727569$paletteon_core ()Lkotlin/jvm/functions/Function2;
+	public final fun getLambda$1142328563$paletteon_core ()Lkotlin/jvm/functions/Function2;
+	public final fun getLambda$1677432863$paletteon_core ()Lkotlin/jvm/functions/Function2;
 }
 
 public final class dev/teogor/paletteon/ui/simulation/CustomColor : dev/teogor/paletteon/ui/simulation/ColorEntry {
@@ -330,7 +324,7 @@ public final class dev/teogor/paletteon/ui/simulation/CustomColor : dev/teogor/p
 }
 
 public abstract interface class dev/teogor/paletteon/ui/simulation/DeviceShape {
-	public abstract fun asShape ()Landroidx/compose/ui/graphics/Shape;
+	public fun asShape ()Landroidx/compose/ui/graphics/Shape;
 }
 
 public final class dev/teogor/paletteon/ui/simulation/DeviceShape$Circular : dev/teogor/paletteon/ui/simulation/DeviceShape {
