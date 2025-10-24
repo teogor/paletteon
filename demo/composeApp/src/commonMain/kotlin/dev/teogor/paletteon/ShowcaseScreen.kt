@@ -223,7 +223,6 @@ private fun ShowcaseScreenContent(
       .fillMaxSize(),
     horizontalAlignment = Alignment.CenterHorizontally
   ) {
-
     LazyVerticalGrid(
       state = scrollState,
       columns = if (getContainerWidthInDp() < 800.dp) {
@@ -234,8 +233,7 @@ private fun ShowcaseScreenContent(
       contentPadding = PaddingValues(16.dp),
       verticalArrangement = Arrangement.spacedBy(16.dp),
       horizontalArrangement = Arrangement.spacedBy(16.dp),
-      modifier = Modifier
-        .fillMaxWidth()
+      modifier = Modifier.fillMaxWidth()
     ) {
       colorPalettePreview(
         currentSeedColor = paletteonThemeState.seedColor,
@@ -387,7 +385,7 @@ private fun LazyGridScope.colorPalettePreview(
     val theme = PaletteonTheme.current
     val colors = CorePalette()
 
-    val device = rememberSaveable {
+    val device = remember {
       listOf(
         DeviceType.TV(),
         DeviceType.Mobile(),

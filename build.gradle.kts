@@ -183,14 +183,13 @@ subprojects {
     }
 }
 
-val excludedProjects = listOf<DelegatingProjectDependency>(
+val excludedProjectsPaths = listOf(
     projects.paletteon,
     projects.demo,
-)
+).map { it.path }
 
 subprojects {
-    // val paths = excludedProjects.map { it.path }
-    // if (!paths.contains(this.path)) {
-    //     apply<DokkaPlugin>()
-    // }
+    if (!excludedProjectsPaths.contains(this.path)) {
+        apply<DokkaPlugin>()
+    }
 }
