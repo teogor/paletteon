@@ -5,7 +5,6 @@ import dev.teogor.winds.api.License
 import dev.teogor.winds.api.NameFormat
 import dev.teogor.winds.api.Person
 import dev.teogor.winds.api.Scm.GitHub
-import dev.teogor.winds.api.SonatypeHost
 import dev.teogor.winds.api.TicketSystem
 import dev.teogor.winds.ktx.createVersion
 import dev.teogor.winds.ktx.person
@@ -13,8 +12,6 @@ import dev.teogor.winds.ktx.scm
 import dev.teogor.winds.ktx.ticketSystem
 import org.gradle.api.internal.catalog.DelegatingProjectDependency
 import org.jetbrains.dokka.gradle.DokkaPlugin
-import org.jetbrains.kotlin.gradle.dsl.KotlinJvmProjectExtension
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     alias(libs.plugins.jetbrains.compose) apply false
@@ -22,7 +19,7 @@ plugins {
     alias(libs.plugins.jetbrains.kotlin.android) apply false
     alias(libs.plugins.jetbrains.kotlin.multiplatform) apply false
     alias(libs.plugins.android.application) apply false
-    alias(libs.plugins.android.library) apply false
+    alias(libs.plugins.android.kotlin.multiplatform.library) apply false
 
     alias(libs.plugins.teogor.winds)
     alias(libs.plugins.vanniktech.maven)
@@ -30,8 +27,6 @@ plugins {
     alias(libs.plugins.diffplug.spotless)
     alias(libs.plugins.jetbrains.kotlinx.binary.compatibility)
 }
-
-
 
 winds {
     features {
@@ -93,7 +88,7 @@ winds {
         enablePublicationSigning = true
         optInForVanniktechPlugin = true
         cascade = true
-        sonatypeHost = SonatypeHost.S01
+        automaticPublishing = true
     }
 
     documentationBuilder {
@@ -194,8 +189,8 @@ val excludedProjects = listOf<DelegatingProjectDependency>(
 )
 
 subprojects {
-    val paths = excludedProjects.map { it.identityPath.path }
-    if (!paths.contains(this.path)) {
-        apply<DokkaPlugin>()
-    }
+    // val paths = excludedProjects.map { it.path }
+    // if (!paths.contains(this.path)) {
+    //     apply<DokkaPlugin>()
+    // }
 }
