@@ -18,9 +18,9 @@ API Reference
 
 [//]: # (REGION-RELEASE-TABLE)
 
-| Latest Update     |  Stable Release  |  Release Candidate  |  Beta Release  |  Alpha Release  |
-|:------------------|:----------------:|:-------------------:|:--------------:|:---------------:|
-| August 30, 2024   |        -         |          -          |       -        |  1.0.0-alpha01  |
+| Latest Update      |  Stable Release  |  Release Candidate  |  Beta Release  |  Alpha Release  |
+|:-------------------|:----------------:|:-------------------:|:--------------:|:---------------:|
+| October 24, 2025   |        -         |          -          |       -        |  1.0.0-alpha02  |
 
 [//]: # (REGION-RELEASE-TABLE)
 
@@ -34,7 +34,7 @@ To use Paletteon in your app, add the following dependencies to your app's `buil
 
     ```groovy title="build.gradle"
     dependencies {
-        def teogorPaletteon = "1.0.0-alpha01"
+        def teogorPaletteon = "1.0.0-alpha02"
         
         implementation "dev.teogor.paletteon:material-color-utilities:$teogorPaletteon"
         implementation "dev.teogor.paletteon:paletteon-core:$teogorPaletteon"
@@ -47,7 +47,7 @@ To use Paletteon in your app, add the following dependencies to your app's `buil
 
     ```kotlin title="build.gradle.kts"
     dependencies {
-        val teogorPaletteon = "1.0.0-alpha01"
+        val teogorPaletteon = "1.0.0-alpha02"
         
         implementation("dev.teogor.paletteon:material-color-utilities:$teogorPaletteon")
         implementation("dev.teogor.paletteon:paletteon-core:$teogorPaletteon")
@@ -82,9 +82,8 @@ August 30, 2024
 
 [`dev.teogor.paletteon:paletteon-*:1.0.0-alpha01`](https://github.com/teogor/paletteon/releases/1.0.0-alpha01) is released. [Version 1.0.0-alpha01 contains these commits](https://github.com/teogor/paletteon/commits/1.0.0-alpha01)
 
-# 🎉 Introducing CrossLens v1.0.0-alpha01 🧩
-🔍 **CrossLens** provides precise platform insights for Kotlin Multiplatform projects, ensuring seamless adaptation across various environments. Whether you're developing for mobile, desktop, or IoT, CrossLens helps you understand and manage platform-specific details with ease.
-## Features - **Multi-Platform Support:** Get detailed information about the platform your code is running on, across different environments. - **Seamless Integration:** Easily integrate with your existing Kotlin Multiplatform projects. - **Up-to-Date Insights:** Stay informed with the latest platform information to ensure compatibility and optimal performance.
+# 🎉 Introducing Paletteon v1.0.0-alpha01 🎉
+🎨 **Paletteon** elevates your Compose Multiplatform UI with dynamic color themes, smooth transitions, and extensive customization options.
 
 [//]: # (REGION-VERSION-CHANGELOG)
 

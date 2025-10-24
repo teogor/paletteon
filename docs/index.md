@@ -36,7 +36,7 @@ To use Paletteon in your app, add the following dependencies to your app's `buil
 
     ```groovy title="build.gradle"
     dependencies {
-        def teogorPaletteon = "1.0.0-alpha01"
+        def teogorPaletteon = "1.0.0-alpha02"
         
         implementation "dev.teogor.paletteon:material-color-utilities:$teogorPaletteon"
         implementation "dev.teogor.paletteon:paletteon-core:$teogorPaletteon"
@@ -49,7 +49,7 @@ To use Paletteon in your app, add the following dependencies to your app's `buil
 
     ```kotlin title="build.gradle.kts"
     dependencies {
-        val teogorPaletteon = "1.0.0-alpha01"
+        val teogorPaletteon = "1.0.0-alpha02"
         
         implementation("dev.teogor.paletteon:material-color-utilities:$teogorPaletteon")
         implementation("dev.teogor.paletteon:paletteon-core:$teogorPaletteon")
@@ -71,7 +71,7 @@ First, define the dependencies in the `libs.versions.toml` file:
 
     ```toml title="gradle/libs.versions.toml"
     [versions]
-    teogor-paletteon = "1.0.0-alpha01"
+    teogor-paletteon = "1.0.0-alpha02"
     
     [libraries]
     teogor-paletteon-material-color-utilities = { group = "dev.teogor.paletteon", name = "material-color-utilities", version.ref = "teogor-paletteon" }
@@ -84,7 +84,7 @@ First, define the dependencies in the `libs.versions.toml` file:
 
     ```toml title="gradle/libs.versions.toml"
     [versions]
-    teogor-paletteon = "1.0.0-alpha01"
+    teogor-paletteon = "1.0.0-alpha02"
     
     [libraries]
     teogor-paletteon-material-color-utilities = { module = "dev.teogor.paletteon:material-color-utilities", version.ref = "teogor-paletteon" }

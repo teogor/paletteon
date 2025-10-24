@@ -55,5 +55,62 @@
         "date": 1725031986
       }
     ]
+  },
+  {
+    "module": "dev.teogor.paletteon:paletteon",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "patch": 0,
+      "flag": "Alpha",
+      "versionQualifier": 2
+    },
+    "date": 1761309699,
+    "dependencies": [
+      {
+        "module": "dev.teogor.paletteon:material-color-utilities",
+        "version": {
+          "major": 1,
+          "minor": 0,
+          "patch": 0,
+          "flag": "Alpha",
+          "versionQualifier": 2
+        },
+        "date": 1761309699
+      },
+      {
+        "module": "dev.teogor.paletteon:paletteon-core",
+        "version": {
+          "major": 1,
+          "minor": 0,
+          "patch": 0,
+          "flag": "Alpha",
+          "versionQualifier": 2
+        },
+        "date": 1761309699
+      },
+      {
+        "module": "dev.teogor.paletteon:paletteon-icons",
+        "version": {
+          "major": 1,
+          "minor": 0,
+          "patch": 0,
+          "flag": "Alpha",
+          "versionQualifier": 2
+        },
+        "date": 1761309699
+      },
+      {
+        "module": "dev.teogor.paletteon:paletteon-kobweb",
+        "version": {
+          "major": 1,
+          "minor": 0,
+          "patch": 0,
+          "flag": "Alpha",
+          "versionQualifier": 2
+        },
+        "date": 1761309699
+      }
+    ]
   }
 ]
