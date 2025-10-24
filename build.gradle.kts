@@ -49,7 +49,7 @@ winds {
             group = "dev.teogor.paletteon"
             name = "paletteon"
             version = createVersion(1, 0, 0) {
-                alphaRelease(1)
+                alphaRelease(2)
             }
             nameFormat = NameFormat.FULL
             artifactIdFormat = ArtifactIdFormat.MODULE_NAME_ONLY
